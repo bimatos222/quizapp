@@ -12,7 +12,7 @@
     --primary-text-color: #313e51;
     --secondary-text-color: #626c7f;
     --button-bg: #fff;
-    --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0,14);
+    --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
     --bg-html: #fff1e9;
     --bg-css: #e0fdef;
     --bg-javascript: #ebf0ff;
@@ -137,6 +137,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 12px;
 }
 
 .alternativas label {
@@ -144,10 +145,53 @@ main {
     background: var(--button-bg);
     padding: 12px;
     font-size: 18px;
+    font-weight: 500;
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    color: var(--primary-text-color);
+}
+
+.alternativas label:has(input:checked) {
+    
 }
 
 .alternativas input {
     display: none;
+}
+
+.alternativas div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+}
+
+.alternativas div span {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: var(--bg-color);
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary-text-color);
+    flex-shrink: 0;
+    
+}
+
+.alternativas button {
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    background: var(--purple);
+    color: var(--white);
+    width: 100%;
+
+    font-size: 18px;
+    font-weight: 500;
+
 }
 
 @media(min-width: 1100px) {
