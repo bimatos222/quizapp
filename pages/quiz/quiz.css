@@ -59,14 +59,13 @@ header {
 }
 
 .assunto_icone {
-    background: var(--bg-acessibilidade);
     width: 40px;
     height: 40px;
     padding: 5px;
     border-radius: 5px;
 }
 
-.assunto_icone.hmtl {
+.assunto_icone.html {
     background: var(--bg-html);
 }
 
@@ -151,7 +150,6 @@ main {
 
 .barra_progresso div {
     height: 100%;
-    width: 60%;
     background: var(--purple);
     border-radius: 999px;
 }
